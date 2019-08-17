@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 5px;
+      border: 1px solid #c3c3c3;
+    }
+
+    th {
+      background-color: #f1f1f1;
+    }
+
+    .utils-total {
+      font-weight: bold;
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Hi {{{ recipient.name }}},</p>
+
+  <p>
+    Your utilities share in {{{ billPeriod }}} is
+    <strong>${{{ recipient.shareAmount }}}</strong>.
+  </p>
+
+  <p>Breakdown of everyone's share:</p>
+
+  <table>
+    <tr>
+      <th>Roommate</th>
+      <th>Share</th>
+      <th>Proportion</th>
+    </tr>
+
+    {{#each sharers}}
+    <tr>
+      <td>{{name}}</td>
+      <td>{{shareAmount}}</td>
+      <td>{{portion}}</td>
+    </tr>
+    {{/each}}
+
+    <tr class="utils-total">
+      <td>TOTAL</td>
+      <td>{{{ utilsTotal }}} </td>
+    </tr>
+  </table>
+
+  <p>
+    Please make your payment to {{{ senderName }}} by the {{{ lastDay }}}.
+  </p>
+
+  <p>Thanks,</p>
+  <p><em style="font-family: monospace; font-style: normal">Utils-Bot</em>, writing on {{{ senderName }}}'s behalf</p>
+</body>
+
+</html>
