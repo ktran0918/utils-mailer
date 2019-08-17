@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "A program to notify roommates of their shares of the utilities of the month.",
   "main": "utils-mailer.js",
-  "dependencies": {},
+  "dependencies": {
+    "handlebars": "^4.1.2",
+    "nodemailer": "^6.3.0"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
