@@ -15,4 +15,4 @@ A program to notify roommates of their shares of the utilities of the month.
 
 The email template is defined in `mail-template/mail-template.handlebars`. Nodemailer's configurations and Google API credentials are stored in `mail-config.js`. Utilities and roommates' information are stored in `shares-config.js`.
 
-The contents of `mail-config.js` and `shares-config.js` have been emptied for public. What remain are templates to be filled in by the user.
+NOTE: The real `mail-config.js` and `shares-config.js` files are not published because they contain personal credentials and contact information. Example files appended with `example` in the name are published instead.
