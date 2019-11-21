@@ -1,2 +1,6 @@
 node_modules
 .vscode/
+
+# config files
+mail-config.js
+shares-config.js
