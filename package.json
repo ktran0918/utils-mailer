@@ -4,7 +4,7 @@
   "description": "A program to notify roommates of their shares of the utilities of the month.",
   "main": "utils-mailer.js",
   "dependencies": {
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.5.3",
     "nodemailer": "^6.3.0"
   },
   "devDependencies": {},
